@@ -29,7 +29,7 @@ jobs:
               OPTION_PROFILE_ID: ""
               CANCEL_OPTION: false
               CANCEL_HOURS: ""
-              SEVERITY_CHECK: false
+              SEVERITY_CHECK: true
               SEVERITY_LEVEL: 1
               EXCLUDE: ""
               FAIL_ON_SCAN_ERROR: false
