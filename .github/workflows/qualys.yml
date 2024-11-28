@@ -2,7 +2,7 @@ name: Qualys WAS Scan
 on:
   push:
     branches:
-      - main
+      - master
 jobs:
     Qualys_was_scan:
         runs-on: ubuntu-latest
