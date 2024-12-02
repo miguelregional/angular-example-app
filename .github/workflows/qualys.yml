@@ -18,7 +18,7 @@ jobs:
                 xml_content='<ServiceRequest>
                 <data>
                 <WebApp>
-                <url>{{ vars.SERVICE_URL }}</url>
+                <url>${{ vars.SERVICE_URL }}</url>
                 </WebApp>
                 </data>
                 </ServiceRequest>'
