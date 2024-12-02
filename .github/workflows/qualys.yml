@@ -31,7 +31,7 @@ jobs:
              
           - name: Update WAS App
             run: |
-              $response=(curl --write-out "%{http_code}" --silent --output /dev/null  -u "${{ vars.QUALYS_USERNAME }}:${{ secrets.QUALYS_PASSWORD }}" -H "content-type: text/xml" -X "POST" --data-binary @file.xml "${{ vars.API_SERVER }}/qps/rest/3.0/update/was/webapp/${{ vars.WEBAPP_ID }}")
+              response=$(curl --write-out "%{http_code}" --silent --output /dev/null  -u "${{ vars.QUALYS_USERNAME }}:${{ secrets.QUALYS_PASSWORD }}" -H "content-type: text/xml" -X "POST" --data-binary @file.xml "${{ vars.API_SERVER }}/qps/rest/3.0/update/was/webapp/${{ vars.WEBAPP_ID }}")
               if [ "$response" -ne 200 ]; then
                 echo "Error: Received status code $response"
                 exit 1  # This stops the pipeline if the status code is not 200
