@@ -30,7 +30,7 @@ jobs:
               CANCEL_OPTION: false
               CANCEL_HOURS: ""
               SEVERITY_CHECK: true
-              SEVERITY_LEVEL: 5
+              SEVERITY_LEVEL: 1
               EXCLUDE: ""
               FAIL_ON_SCAN_ERROR: false
               WAIT_FOR_RESULT: true
